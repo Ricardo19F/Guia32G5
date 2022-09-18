@@ -1,1 +1,128 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE federacion [
+    <!-- paso 1 -->
+    <!ELEMENT federacion (liga+)>
+    <!-- paso 2 -->
+    <!ATTLIST federacion nombre_fed CDATA #FIXED "Federacion Española de Fútbol">
+    <!-- paso 3 -->
+    <!-- <!ELEMENT liga (categoria, equipo)> -->
+    <!ELEMENT liga (equipo+)>
+    <!ATTLIST liga
+        codigo CDATA #REQUIRED
+        num_equipo CDATA #REQUIRED
+        nombre_liga CDATA #REQUIRED
+    >
+    <!-- paso4 -->
+    <!ELEMENT equipo (mayor, femenil, reserva, trofeo*, figura_celebre*)>
+    <!ATTLIST equipo
+        nombre_equipo CDATA #REQUIRED
+        siglas ID #REQUIRED
+        anio_fundacion CDATA #REQUIRED
+        tamanio_plantilla CDATA #REQUIRED
+    >
+    <!-- paso 5 -->
+    <!ELEMENT mayor (cuerpo_tecnico, jugador+)>
+    <!ELEMENT femenil (cuerpo_tecnico,jugador+)>
+    <!ELEMENT reserva (cuerpo_tecnico,jugador+)>
+    <!-- paso6 -->
+    <!ELEMENT jugador (nombre, apellido, salario)>
+    <!ATTLIST jugador dorsal CDATA #REQUIRED>
+    <!ATTLIST jugador posicion (delantero|defensa|medio|portero) #REQUIRED>
+    <!ATTLIST jugador año-contratado CDATA #REQUIRED>
+    <!ATTLIST jugador no-identificacion ID #REQUIRED>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellido (#PCDATA)>
+    <!ELEMENT salario (#PCDATA)>
+    <!-- paso7 -->
+    <!ELEMENT cuerpo_tecnico (director_tecnico, preparador_fisico, doctor, asistentes+)>
+    <!ELEMENT director_tecnico (#PCDATA)>
+    <!ELEMENT preparador_fisico (#PCDATA)>
+    <!ELEMENT doctor (#PCDATA)>
+    <!ELEMENT asistentes (#PCDATA)>
+    <!ATTLIST preparador_fisico id CDATA #REQUIRED>
+    <!ATTLIST doctor id CDATA #REQUIRED>
+    <!ATTLIST asistentes id CDATA #REQUIRED>
+    <!-- paso 8 -->
+    <!-- paso 9 -->
+    <!ELEMENT trofeo (#PCDATA)>
+    <!ATTLIST trofeo anio CDATA #REQUIRED>
+    <!ATTLIST trofeo rival CDATA #REQUIRED>
+    <!ATTLIST trofeo marcador CDATA #REQUIRED>
+    <!-- paso 10 -->
+    <!ELEMENT figura_celebre (#PCDATA)>
+    <!ATTLIST figura_celebre
+        periodo CDATA #REQUIRED
+        posiscion (delantero|defensa|medio|portero) #REQUIRED
+        goles CDATA #IMPLIED
+        asistencias CDATA #IMPLIED
+        atajadas CDATA #IMPLIED
+    >
+]>
+<federacion nombre_fed="Federacion Española de Fútbol">
+    <liga codigo="ESP" num_equipo="20" nombre_liga='Española'>
+        <equipo siglas="ESP" anio_fundacion="2004" tamanio_plantilla="30" nombre_equipo="Cádiz FC">
+            <mayor>
+                <cuerpo_tecnico>
+                    <director_tecnico>Ricardo</director_tecnico>
+                    <preparador_fisico id="pf1">Juan</preparador_fisico>
+                    <doctor id="d1">Eliseo</doctor>
+                    <asistentes id="a1">Alessandro</asistentes>
+                    <asistentes id="a2">Manuel</asistentes>
+                </cuerpo_tecnico>
+                <jugador dorsal='11' posicion="delantero" no-identificacion='P887493-3' año-contratado='1980'>
+                    <nombre>Jorge</nombre>
+                    <apellido>Mágico</apellido>
+                    <salario>10</salario>
+                </jugador>
+                <jugador dorsal='10' posicion="delantero" no-identificacion='P45493-3' año-contratado='1980'>
+                    <nombre>Jorge</nombre>
+                    <apellido>Mágico</apellido>
+                    <salario>10</salario>
+                </jugador>
+                <jugador dorsal='9' posicion="delantero" no-identificacion='P83457493-3' año-contratado='1980'>
+                    <nombre>Jorge</nombre>
+                    <apellido>Mágico</apellido>
+                    <salario>10</salario>
+                </jugador>
+                <jugador dorsal='8' posicion="delantero" no-identificacion='P8877393-3' año-contratado='1980'>
+                    <nombre>Jorge</nombre>
+                    <apellido>Mágico</apellido>
+                    <salario>10</salario>
+                </jugador>
+            </mayor>
+            <femenil>
+                <cuerpo_tecnico>
+                    <director_tecnico>Ricardo</director_tecnico>
+                    <preparador_fisico id="pf1">Juan</preparador_fisico>
+                    <doctor id="d1">Eliseo</doctor>
+                    <asistentes id="a1">Alessandro</asistentes>
+                    <asistentes id="a2">Manuel</asistentes>
+                </cuerpo_tecnico>
+                <jugador dorsal='11' posicion="delantero" no-identificacion='P882493-3' año-contratado='2015'>
+                    <nombre>Alexia</nombre>
+                    <apellido>Putellas</apellido>
+                    <salario>10000</salario>
+                </jugador>
+            </femenil>
+            <reserva>
+                <cuerpo_tecnico>
+                    <director_tecnico>Ricardo</director_tecnico>
+                    <preparador_fisico id="pf1">Juan</preparador_fisico>
+                    <doctor id="d1">Eliseo</doctor>
+                    <asistentes id="a1">Alessandro</asistentes>
+                    <asistentes id="a2">Manuel</asistentes>
+                </cuerpo_tecnico>
+                <jugador dorsal='11' posicion="delantero" no-identificacion='P887593-3' año-contratado='1980'>
+                    <nombre>Jorge</nombre>
+                    <apellido>Mágico</apellido>
+                    <salario>10</salario>
+                </jugador>
+            </reserva>
+            <trofeo anio="1992" marcador="10-0" rival="Barca">Joan Gamper</trofeo>
+            <trofeo anio="1992" marcador="10-0" rival="Barca">Joan Gamper</trofeo>
+            <figura_celebre periodo="8" posiscion="delantero" goles="20" asistencias="10">Magico Gonzalez</figura_celebre>
+        </equipo>
+    </liga>
+
+
+</federacion>
