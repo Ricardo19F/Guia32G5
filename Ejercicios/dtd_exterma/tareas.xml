@@ -1,97 +1,126 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-
-<!DOCTYPE materia [
-    <!ELEMENT materia (clase+)>
-    <!ELEMENT clase (grupo+)>
-    <!ELEMENT grupo (coordinador)>
-    <!ATTLIST clase tipo (GT|GL|GD) #REQUIRED>
-    <!ELEMENT rol (rol?)>
-    <!ELEMENT integrante (carnet)>
-    <!ELEMENT coordinador (#PCDATA)>
-    <!ATTLIST materia codigo ID #REQUIRED>
-    <!ATTLIST clase grupo CDATA #REQUIRED>
-    <!ATTLIST clase dias_horario CDATA #REQUIRED>
-    <!ATTLIST clase horas_horario CDATA #IMPLIED>
-    <!ATTLIST clase profesor_encargado CDATA #REQUIRED>
-    <!ATTLIST coordinador sexo (M|F) "F">
-]>
-
-<materia nombre="Técnicas de Programación para Internet" codigo="TPI115">
-    <clase tipo="GT" grupo="2" profesor_encargado="Ing. #1" dias_horario="M, V">
-        <equipo>
-            <coordinador sexo="F"></coordinador>
-        </equipo>
-    </clase>
-</materia><grupo numero="1" tema="JavaScript">
-    <integrante rol="coordinador">
-        <carnet>PA16056</carnet>
-        <nombre>Juan José</nombre>
-        <apellido>Peréz Alvarado</apellido>
-    </integrante>
-
-    <integrante rol="integrante">
-        <carnet>PH18093</carnet>
-        <nombre>Karen Alejandra</nombre>
-        <apellido>Peréz Hernández/apellido>
-        
-        
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    </integrante>
-
-    <integrante rol="integrante">
-        <carnet>LC19065</carnet>
-        <nombre>Samuel José</nombre>
-        <apellido>Lopéz Carrillo</apellido>
-    </integrante>
-
-    <integrante rol="integrante">
-        <carnet>PH18078</carnet>
-        <nombre>Karen Alejandra</nombre>
-        <apellido>Peréz Hernández/apellido>
-        
-        
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    </integrante>
-</grupo><grupo numero="2" tema="XML">
-    <integrante rol="coordinador">
-        <carnet>MG19069</carnet>
-        <nombre>Carlos Eduardo</nombre>
-        <apellido>Martínez García</apellido>
-    </integrante>
-
-    <integrante rol="integrante">
-        <carnet>RP18236</carnet>
-        <nombre>Ronald Edgardo</nombre>
-        <apellido>Rodríguez Peña</apellido>
-    </integrante>
-
-    <integrante rol="integrante">
-        <carnet>GM19071</carnet>
-        <nombre>Lourdes Guadalupe</nombre>
-        <apellido>González Mendoza</apellido>
-    </integrante>
-
-    <integrante rol="integrante">
-        <carnet>GG18072</carnet>
-        <nombre>Nancy Esmeralda</nombre>
-        <apellido>García García</apellido>
-    </integrante>
-</grupo>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE root SYSTEM "tareas.dtd">
+<root universidad="Univerdad de El Salvador">
+    <carrera facultad="FIA">
+        <nombre_carrera>Sistemas</nombre_carrera>
+        <codigo>ISI-1998</codigo>
+    </carrera>
+    <materia codigo="TPI115">
+        <clase profesor_encargado="Ing. Boris" grupo="GT-01" tipo="GT" horario="M, V 15:05 - 16:45" es_electiva="No">
+            <actividad evaluacion="laboratorio">
+                <porcentaje>15%</porcentaje>
+            </actividad>
+            <grupo numero="GPO3" tema="JavaScript">
+                <coordinador sexo="M">
+                    <carnet>PA16056</carnet>
+                    <nombre>Juan José</nombre>
+                    <apellido>Peréz Alvarado</apellido>
+                    <matricula>Primera</matricula>
+                </coordinador>
+                <integrante>
+                    <carnet>PH18093</carnet>
+                    <nombre>Karen Alejandra</nombre>
+                    <apellido>Peréz Hernández</apellido>
+                    <matricula>Primera</matricula>
+                </integrante>
+                <integrante>
+                    <carnet>LC19065</carnet>
+                    <nombre>Samuel José</nombre>
+                    <apellido>Lopéz Carrillo</apellido>
+                    <matricula>Primera</matricula>
+                </integrante>
+                <integrante>
+                    <carnet>PH18078</carnet>
+                    <nombre>Karen Alejandra</nombre>
+                    <apellido>Peréz Hernández</apellido>
+                    <matricula>Primera</matricula>
+                </integrante>
+                <nombre_grupo>Los 4 fantasticos</nombre_grupo>
+            </grupo>
+            <grupo numero="GPO4" tema="XML">
+                <coordinador sexo="M">
+                    <carnet>MG19069</carnet>
+                    <nombre>Carlos Eduardo</nombre>
+                    <apellido>Martínez García</apellido>
+                    <matricula>Primera</matricula>
+                </coordinador>
+                <integrante>
+                    <carnet>RP18236</carnet>
+                    <nombre>Ronald Edgardo</nombre>
+                    <apellido>Rodríguez Peña</apellido>
+                    <matricula>Primera</matricula>
+                </integrante>
+                <integrante>
+                    <carnet>GM19071</carnet>
+                    <nombre>Lourdes Guadalupe</nombre>
+                    <apellido>González Mendoza</apellido>
+                    <matricula>Primera</matricula>
+                </integrante>
+                <integrante>
+                    <carnet>GG18072</carnet>
+                    <nombre>Nancy Esmeralda</nombre>
+                    <apellido>García García</apellido>
+                    <matricula>Primera</matricula>
+                </integrante>
+            </grupo>
+        </clase>
+        <clase profesor_encargado="Ing. Boris" grupo="GT-02" tipo="GT" horario="M, V 15:05 - 16:45" es_electiva="No">
+            <actividad evaluacion="laboratorio">
+                <porcentaje>15%</porcentaje>
+            </actividad>
+            <grupo numero="GPO1" tema="JavaScript">
+                <coordinador sexo="M">
+                    <carnet>PA16056</carnet>
+                    <nombre>Juan José</nombre>
+                    <apellido>Peréz Alvarado</apellido>
+                    <matricula>Primera</matricula>
+                </coordinador>
+                <integrante>
+                    <carnet>PH18093</carnet>
+                    <nombre>Karen Alejandra</nombre>
+                    <apellido>Peréz Hernández</apellido>
+                    <matricula>Primera</matricula>
+                </integrante>
+                <integrante>
+                    <carnet>LC19065</carnet>
+                    <nombre>Samuel José</nombre>
+                    <apellido>Lopéz Carrillo</apellido>
+                    <matricula>Primera</matricula>
+                </integrante>
+                <integrante>
+                    <carnet>PH18078</carnet>
+                    <nombre>Karen Alejandra</nombre>
+                    <apellido>Peréz Hernández</apellido>
+                    <matricula>Primera</matricula>
+                </integrante>
+                <nombre_grupo>Los 4 fantasticos</nombre_grupo>
+            </grupo>
+            <grupo numero="GPO2" tema="XML">
+                <coordinador sexo="M">
+                    <carnet>MG19069</carnet>
+                    <nombre>Carlos Eduardo</nombre>
+                    <apellido>Martínez García</apellido>
+                    <matricula>Primera</matricula>
+                </coordinador>
+                <integrante>
+                    <carnet>RP18236</carnet>
+                    <nombre>Ronald Edgardo</nombre>
+                    <apellido>Rodríguez Peña</apellido>
+                    <matricula>Primera</matricula>
+                </integrante>
+                <integrante>
+                    <carnet>GM19071</carnet>
+                    <nombre>Lourdes Guadalupe</nombre>
+                    <apellido>González Mendoza</apellido>
+                    <matricula>Primera</matricula>
+                </integrante>
+                <integrante>
+                    <carnet>GG18072</carnet>
+                    <nombre>Nancy Esmeralda</nombre>
+                    <apellido>García García</apellido>
+                    <matricula>Primera</matricula>
+                </integrante>
+            </grupo>
+        </clase>
+    </materia>
+</root>

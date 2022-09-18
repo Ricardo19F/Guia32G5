@@ -1,7 +1,39 @@
-<!ELEMENT universidad (nombre, codigo)>
-<!ELEMENT carrera (nombre, codigo)>
-<!ELEMENT actividad (#PCDATA)>
-<!ATTLIST actividad evaluada (laboratorio|tarea-ex|parcial|discusion|corto)* #REQUIERED>
+<!-- paso 1 y 2  -->
+<!ELEMENT root (carrera, materia)>
+<!ATTLIST root universidad CDATA #FIXED "Univerdad de El Salvador">
+<!-- paso 3 -->
+<!ELEMENT carrera (nombre_carrera, codigo)>
+<!ELEMENT nombre_carrera (#PCDATA)>
+<!ELEMENT codigo (#PCDATA)>
+<!ATTLIST carrera facultad CDATA #REQUIRED>
+<!-- paso 4 -->
+<!ELEMENT materia (clase+)>
+<!ATTLIST materia codigo ID #REQUIRED>
+<!-- paso 5 -->
+<!ELEMENT clase (actividad, grupo+)>
+<!ATTLIST clase grupo ID #REQUIRED>
+<!ATTLIST clase tipo (GT|GL|GD) #REQUIRED>
+<!-- paso 6 -->
+<!ATTLIST clase profesor_encargado CDATA #REQUIRED>
+<!-- paso 7 -->
+<!ELEMENT actividad (porcentaje)>
+<!ATTLIST actividad evaluacion (laboratorio|tarea-ex|parcial|discusion|corto) #REQUIRED>
 <!ELEMENT porcentaje (#PCDATA)>
-<!ELEMENT integrante (carnet, nombres, apellidos)>
-<!ATTLIST universidad uni CDATA #FIXED "Univerdad de El Salvador">
+<!-- paso 8 -->
+<!ELEMENT grupo (coordinador, integrante, integrante, integrante, nombre_grupo?)>
+<!ATTLIST grupo numero ID #REQUIRED>
+<!ATTLIST grupo tema CDATA #REQUIRED>
+<!-- paso 9 -->
+<!-- paso 10 -->
+<!ELEMENT coordinador (carnet, nombre, apellido, matricula)>
+<!ELEMENT integrante (carnet, nombre, apellido, matricula)>
+<!ELEMENT carnet (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!-- paso 11 -->
+<!ATTLIST coordinador sexo (M|F) "F">
+<!-- paso 12 -->
+<!ELEMENT matricula (#PCDATA)>
+<!ELEMENT nombre_grupo (#PCDATA)>
+<!ATTLIST clase horario CDATA #REQUIRED>
+<!ATTLIST clase es_electiva CDATA #IMPLIED>
