@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!DOCTYPE materia [
+    <!ELEMENT materia (clase+, opcional?)>
+    <!ELEMENT clase (equipo)>
+    <!ELEMENT equipo (coordinador)>
+    <!ELEMENT coordinador (#PCDATA)>
+    <!ATTLIST clase tipo (GT|GL|GD) #REQUIRED>
+    <!ATTLIST clase grupo CDATA #REQUIRED>
+    <!ATTLIST clase dias_horario CDATA #REQUIRED>
+    <!ATTLIST clase horas_horario CDATA #IMPLIED>
+    <!ATTLIST clase profesor_encargado CDATA #REQUIRED>
+    <!ATTLIST coordinador sexo (M|F) "F">
+]>
+
+<materia>
+    <clase tipo="GT" grupo="2" profesor_encargado="Ing. #1" dias_horario="M, V">
+        <equipo>
+            <coordinador sexo="F"></coordinador>
+        </equipo>
+    </clase>
+</materia>
