@@ -1,1 +1,60 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE grupos SYSTEM "url.dtd">
+
+<!ELEMENT rol (rol?)>
+<!ELEMENT integrante (carnet)>
+
+<materia nombre="Técnicas de Programación para Internet" codigo="TPI115">
+    <grupo numero="1" tema="JavaScript">
+        <integrante rol="coordinador">
+            <carnet>PA16056</carnet>
+            <nombre>Juan José</nombre>
+            <apellido>Peréz Alvarado</apellido>
+        </integrante>
+
+        <integrante rol="integrante">
+            <carnet>PH18093</carnet> 
+            <nombre>Karen Alejandra</nombre>
+            <apellido>Peréz Hernández/apellido>
+        </integrante>
+
+        <integrante rol="integrante">
+            <carnet>LC19065</carnet>
+            <nombre>Samuel José</nombre>
+            <apellido>Lopéz Carrillo</apellido>
+        </integrante>
+
+        <integrante rol="integrante">
+            <carnet>PH18078</carnet> 
+            <nombre>Karen Alejandra</nombre>
+            <apellido>Peréz Hernández/apellido>
+        </integrante>
+    </grupo>
+
+    <grupo numero="2" tema="XML">
+        <integrante rol="coordinador">
+            <carnet>MG19069</carnet>
+            <nombre>Carlos Eduardo</nombre>
+            <apellido>Martínez García</apellido>
+        </integrante>
+
+        <integrante rol="integrante">
+            <carnet>RP18236</carnet>
+            <nombre>Ronald Edgardo</nombre>
+            <apellido>Rodríguez Peña</apellido>
+        </integrante>
+
+        <integrante rol="integrante">
+            <carnet>GM19071</carnet>
+            <nombre>Lourdes Guadalupe</nombre>
+            <apellido>González Mendoza</apellido>
+        </integrante>
+
+        <integrante rol="integrante">
+            <carnet>GG18072</carnet>
+            <nombre>Nancy Esmeralda</nombre>
+            <apellido>García García</apellido>
+        </integrante>      
+    </grupo>
+
+</materia>
