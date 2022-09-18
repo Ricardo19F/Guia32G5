@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="ejercicio4.css" ?>
 <!DOCTYPE federacion [
     <!-- paso 1 -->
     <!ELEMENT federacion (liga+)>
@@ -123,6 +124,4 @@
             <figura_celebre periodo="8" posiscion="delantero" goles="20" asistencias="10">Magico Gonzalez</figura_celebre>
         </equipo>
     </liga>
-
-
 </federacion>
