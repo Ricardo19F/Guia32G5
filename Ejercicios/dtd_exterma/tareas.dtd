@@ -1,0 +1,7 @@
+<!ELEMENT universidad (nombre, codigo)>
+<!ELEMENT carrera (nombre, codigo)>
+<!ELEMENT actividad (#PCDATA)>
+<!ATTLIST actividad evaluada (laboratorio|tarea-ex|parcial|discusion|corto)* #REQUIERED>
+<!ELEMENT porcentaje (#PCDATA)>
+<!ELEMENT integrante (carnet, nombres, apellidos)>
+<!ATTLIST universidad uni CDATA #FIXED "Univerdad de El Salvador">
