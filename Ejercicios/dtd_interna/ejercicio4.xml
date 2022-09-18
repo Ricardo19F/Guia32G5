@@ -1,1 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!DOCTYPE federacion[
+    <!ELEMENT liga (categoria, equipo)>
+    <!ELEMENT cuerpo_tecnico (director_tecnico, preparador_fisico, doctor, asistentes)>
+    <!ELEMENT director_tecnico (#PCDATA)>
+    <!ELEMENT preparador_fisico (#PCDATA)>
+    <!ELEMENT doctor (#PCDATA)>
+    <!ELEMENT asistentes (#PCDATA)>
+    <!ATTLIST liga codigo CDATA #REQUIRED num_equipo CDATA #REQUIRED>
+    <!ATTLIST preparador_fisico id CDATA #REQUIRED>
+    <!ATTLIST doctor id CDATA #REQUIRED>
+    <!ATTLIST asistentes id CDATA #REQUIRED>
+]>
+<federacion>
+    <liga codigo="ESP" num_equipo="20">Española</liga>
+    <cuerpo_tecnico>
+        <director_tecnico>Ricardo</director_tecnico>
+        <preparador_fisico id="pf1">Juan</preparador_fisico>
+        <doctor id="d1">Eliseo</doctor>
+        <asistentes id="a1">Alessandro</asistentes>
+        <asistentes id="a2">Manuel</asistentes>
+    </cuerpo_tecnico>
+</federacion>
