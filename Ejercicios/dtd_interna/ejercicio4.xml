@@ -1,1 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!DOCTYPE trofeos [
+    <!ELEMENT trofeos (nombre, anio, rival, marcador)>
+    <!ATTLIST nombre (#PCDATA)>
+    <!ATTLIST anio (#PCDATA)>
+    <!ATTLIST rival (#PCDATA)>
+    <!ATTLIST marcador (#PCDATA)>
+]>
+
+<trofeos>
+    <nombre>Champions</nombre>
+    <anio>2015</anio>
+    <rival>Juventus</rival>
+    <marcador>3-1</marcador>
+</trofeos>
