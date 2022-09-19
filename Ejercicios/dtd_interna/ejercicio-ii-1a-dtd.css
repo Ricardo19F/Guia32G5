@@ -1,0 +1,7 @@
+* {display:block;background-color:limegreen;}
+nombre::before{content: "Nombre(s): ";color:brown;}
+nombre[edad]::after{content: " Edad: "attr(edad);color:purple;}
+nombre[sexo]::after{content: " Sexo: "attr(sexo);color:darkred;}
+apellido::before{content: " Apellido(s): ";color:brown;}
+direccion::before{content: "Direccion: ";color:hsl(240, 100%, 27%);}
+DUI::before{content: "Numero de DUI: ";color:darkslateblue;}
