@@ -1,52 +1,54 @@
-root
-              {
-              font-size:80%;
-              margin:0.5em;
-              font-family: Verdana;
-              display:block;
-              }
+root {
+  font-size: 80%;
+  margin: 0.5em;
+  font-family: Verdana;
+  display: block;
+}
 grupo {
-              display:block; 
-              border: 1px solid silver;
-              margin:0.5em; 
-              padding:0.5em; 
-              background-color:whitesmoke;
-              }
+  display: block;
+  border: 1px solid silver;
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: whitesmoke;
+}
 carrera {
-      display:block;
-      font-weight:bolder;
-      text-align:center;
-      font-size:30px;
-      background-color: green;
-      color: white;
-  
-      }
+  display: block;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 30px;
+  background-color: green;
+  color: white;
+}
 
-actividad, porcentaje, grupo, coordinador, integrante {
-                                display:block;
-                                text-align:center;
-        }
+actividad,
+porcentaje,
+grupo,
+coordinador,
+integrante {
+  display: block;
+  text-align: center;
+}
 
 actividad {
-	 text-decoration: underline  ;
-     	 font-weight:bolder;
-     	 font-size:20px;
-	     color:gree;
-     	 display:block; 
-         border:1px solid silver;
-         margin:0.5em; 
-         padding:0.5em; 
-         background-color:whitesmoke;
-     }
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 20px;
+  color: gree;
+  display: block;
+  border: 1px solid silver;
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: whitesmoke;
+}
 porcentaje {
-       color:green
-       }
+  color: green;
+}
 grupo {
-       color:brown
-       }
+  color: brown;
+}
 coordinador {
-       color:blue
-       }
-integrante { 
-       color:orange
-       }
+  color: blue;
+}
+integrante {
+  color: orange;
+}
