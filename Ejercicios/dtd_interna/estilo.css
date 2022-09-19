@@ -1,0 +1,58 @@
+*|*{
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 1.02em;
+}
+
+*|fichero {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: rgb(243, 243, 243);
+}
+
+*|ficha{
+    display: flex;
+    position: relative;
+    width: 25%;
+    height: auto;
+    background-color: aqua;
+    padding: 1.2em;
+    margin: auto;
+    top: 2em;
+    flex-wrap: wrap;
+}
+
+*|nombre{
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+nombre[sexo]::before{
+    content: "sexo: " attr(sexo);
+    display: block;
+    color: red;
+}
+
+nombre[edad]::after{
+    content: "edad: " attr(edad);
+    display: block;
+    position: relative;
+    color: red;
+}
+
+*|apellido{
+    content: "Apellido: ";
+    display: block;
+    position: relative;
+    width: 25%;
+}
+
+*|direccion{
+    content: "direccion: ";
+    display: block;
+    position: relative;
+    width: 100%;
+
+}

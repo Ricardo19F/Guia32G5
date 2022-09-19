@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- ejercicio-ii-1b-dtd.xml  GRUPO05-->
+<!DOCTYPE fichero SYSTEM "ejercicio-ii-2b-dtd-externa.dtd">
+<?xml-stylesheet type="text/css" href="ejercicio-ii-2b-dtd.css"?>
+<fichero>
+	<ficha>
+		<nombre sexo="masculino" edad="23" DUI="09080978-8">Cristian  Rodolfo</nombre>
+		<apellido>Alvarez Dominguez</apellido>
+		<direccion>Brooklyn, NY.</direccion>
+	</ficha>
+	<a xmlns="http://www.w3.org/1999/xhtml" href="./../../index.html">Regresar</a>
+</fichero>

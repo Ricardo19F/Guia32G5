@@ -1,0 +1,10 @@
+<!-- fichero DTD-->
+
+<!ELEMENT fichero (ficha+)>
+<!ELEMENT ficha (nombre*, apellido*, direccion*)>
+		<!ELEMENT nombre (#PCDATA)>
+		<!ATTLIST nombre sexo (masculino|femenino|otro) #IMPLIED>
+            <!ATTLIST nombre edad  CDATA  #IMPLIED>
+		<!ELEMENT apellido (#PCDATA)>
+		<!ELEMENT direccion (#PCDATA)>
+		<!ELEMENT DUI (#PCDATA)>
