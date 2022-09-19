@@ -32,3 +32,62 @@ equipo {
     background-color: #ffffff34;
     padding-bottom: 10px;
 }
+
+/* TROFEO */
+trofeo {
+    font-family: monospace;
+    font-size: larger;
+    
+    display: block;
+    padding: 0 5px;
+}
+
+trofeo:nth-last-child(n+3):before {
+    content: "🏆 TROFEOS GANADOS ";
+    font-weight: 600;
+    display: block;
+    padding-left: 1rem;
+
+    background-color: #11aa77;
+    border-radius: 5px;
+}
+
+trofeo::after {
+    content: ", " attr(anio) "\A Resultado: " attr(marcador) "\A Rival: " attr(rival);
+    white-space: pre-wrap;
+}
+
+trofeo:nth-child(n+1) {
+    margin-top: 1rem;
+}
+
+/* FIGURA CELEBRE */
+figura_celebre {
+    /* background-color: white; */
+    font-family: monospace;
+    font-size: larger;
+
+    display: block;
+    padding: 0 5px;
+
+    margin-top: 1rem;
+}
+
+figura_celebre::before {
+    content: "⭐ FIGURA CELEBRE ";
+    
+    font-weight: 600;
+    
+    display: block;
+    padding-left: 1rem;
+
+    background-color: #11aa77;
+    border-radius: 5px;
+}
+
+figura_celebre::after {
+    content: " Años activo: " attr(periodo) "\A  Posición: " attr(posiscion) "\A  Goles: " attr(goles) "\A  Asistencias: " attr(asistencias);
+
+    display: block;
+    white-space: pre-wrap;
+}
