@@ -1,145 +1,158 @@
 federacion {
-    background-image: url(cancha.jpg);
-    min-width: 1080px;
-    padding: 5%;
-    line-height: 1.5;
+  background-image: url(cancha.jpg);
+  min-width: 1080px;
+  padding: 5%;
+  line-height: 1.5;
 }
 federacion[nombre_fed]::before {
-    content: attr(nombre_fed);
-    color: #ffffff;
-    font-size: 35px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    display: block;
-    margin-top:5px;
-    text-align: center;
+  content: attr(nombre_fed);
+  color: #ffffff;
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  display: block;
+  margin-top: 5px;
+  text-align: center;
 }
 liga::before {
-    content: attr(nombre_liga);
-    color: #ffffff;
-    font-size: 35px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: oblique;
-    display: block;
-    margin-top:5px;
-    text-align: center;
+  content: attr(nombre_liga);
+  color: #ffffff;
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
+  display: block;
+  margin-top: 5px;
+  text-align: center;
 }
 equipo {
-    display: block;
-    border: 3px double white;
-    border-radius: 1rem;
-    margin: 10px auto;
-    background-color: #ffffff34;
-    padding-bottom: 10px;
+  display: flex;
+  border: 3px double white;
+  border-radius: 1rem;
+  margin: 10px auto;
+  background-color: #ffffff34;
+  padding-bottom: 10px;
+  flex-wrap: wrap;
 }
 
-mayor, femenil, reserva {
-    display: inline-block;
-    border: 3px double rgb(11, 3, 67);
-    border-radius: 1rem;
-    text-align: center;
-    margin: 1px auto;
-    color: white;
-    background-color: #35716d;
-    padding-bottom: 5px;
-
+mayor,
+femenil,
+reserva {
+  display: inline-block;
+  border: 3px double rgb(11, 3, 67);
+  border-radius: 1rem;
+  text-align: center;
+  margin: 1px auto;
+  color: white;
+  background-color: #35716d;
+  padding-bottom: 5px;
+  padding: 10px;
 }
 
 director_tecnico::before {
-    content: "Director tecnico: ";
-    padding-top: 1px;
-    display: block;
-    color: rgb(5, 13, 42);
+  content: "Director tecnico: ";
+  padding-top: 1px;
+  display: block;
+  color: rgb(5, 13, 42);
 }
 
 preparador_fisico::before {
-    content: "preparador_fisico: ";
-    display: block;
-    padding-top: 1px;
-    color: rgb(5, 13, 42);
-
+  content: "preparador_fisico: ";
+  display: block;
+  padding-top: 1px;
+  color: rgb(5, 13, 42);
 }
 doctor::before {
-    content: "Doctor: ";
-    display: block;
-    padding-top: 1px;
-    color:  rgb(5, 13, 42);
+  content: "Doctor: ";
+  display: block;
+  padding-top: 1px;
+  color: rgb(5, 13, 42);
 }
 
 jugador::before {
-    content: "jugador: ";
-    display: flex;
-    padding-top: 1px;
-    color:  rgb(40, 25, 25);
+  content: "jugador: ";
+  display: flex;
+  padding-top: 1px;
+  color: rgb(40, 25, 25);
+  margin-right: 10px;
 }
 
-
-jugador, salario {
-    display: flex;
-    content: attr(nombre_jugador);
-    color: rgb(107, 20, 65);
-    font-size: 15px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: normal;
-    margin: auto;
-    text-align: center;
+jugador,
+salario {
+  display: flex;
+  content: attr(nombre_jugador);
+  color: rgb(107, 20, 65);
+  font-size: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  margin: auto;
+  text-align: center;
 }
-
+salario::before {
+  content: "Salario:";
+  margin-left: 15px;
+  margin-right: 5px;
+}
+salario::after {
+  content: "millones";
+  /* margin-left: 10px; */
+  margin-left: 5px;
+}
 /* TROFEO */
 trofeo {
-    font-family: monospace;
-    font-size: larger;
-    
-    display: block;
-    padding: 0 5px;
+  flex-basis: 100%;
+  font-family: monospace;
+  font-size: larger;
+  background-color: #ffffff7e;
+  display: block;
+  padding: 0 5px;
 }
 
-trofeo:nth-last-child(n+3):before {
-    content: "🏆 TROFEOS GANADOS ";
-    font-weight: 600;
-    display: block;
-    padding-left: 1rem;
+trofeo:nth-last-child(n + 3):before {
+  content: "🏆 TROFEOS GANADOS ";
+  font-weight: 600;
+  display: block;
+  padding-left: 1rem;
 
-    background-color: #11aa77;
-    border-radius: 5px;
+  background-color: #11aa77;
+  border-radius: 5px;
 }
 
 trofeo::after {
-    content: ", " attr(anio) "\A Resultado: " attr(marcador) "\A Rival: " attr(rival);
-    white-space: pre-wrap;
+  content: ", " attr(anio) "\A Resultado: "attr(marcador) "\A Rival: "attr(rival);
+  white-space: pre-wrap;
 }
 
-trofeo:nth-child(n+1) {
-    margin-top: 1rem;
+trofeo:nth-child(n + 1) {
+  margin-top: 1rem;
 }
 
 /* FIGURA CELEBRE */
 figura_celebre {
-    /* background-color: white; */
-    font-family: monospace;
-    font-size: larger;
-
-    display: block;
-    padding: 0 5px;
-
-    margin-top: 1rem;
+  /* background-color: white; */
+  font-family: monospace;
+  font-size: larger;
+  background-color: #ffffff7e;
+  display: block;
+  padding: 0 5px;
+  flex-basis: 100%;
+  margin-top: 1rem;
 }
 
 figura_celebre::before {
-    content: "⭐ FIGURA CELEBRE ";
-    
-    font-weight: 600;
-    
-    display: block;
-    padding-left: 1rem;
+  content: "⭐ FIGURA CELEBRE ";
 
-    background-color: #11aa77;
-    border-radius: 5px;
+  font-weight: 600;
+
+  display: block;
+  padding-left: 1rem;
+
+  background-color: #11aa77;
+  border-radius: 5px;
 }
 
 figura_celebre::after {
-    content: " Años activo: " attr(periodo) "\A  Posición: " attr(posiscion) "\A  Goles: " attr(goles) "\A  Asistencias: " attr(asistencias);
+  content: " Años activo: " attr(periodo) "\A  Posición: "attr(posiscion) "\A  Goles: "attr(goles) "\A  Asistencias: "attr(asistencias);
 
-    display: block;
-    white-space: pre-wrap;
+  display: block;
+  white-space: pre-wrap;
 }
