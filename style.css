@@ -13,8 +13,16 @@ header {
   margin: 0;
   padding: 15px 0px;
 }
+body {
+  background-image: url("back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 main {
   padding: 100px;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 footer {
   background-color: #55370b;
@@ -39,6 +47,8 @@ footer {
 }
 .row {
   display: flex;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 .space {
   flex-grow: 0.4;
@@ -48,7 +58,7 @@ footer {
 }
 .ejercicio__title {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 0;
   padding-bottom: 30px;
 }
 .ejercicio__enlaces {
@@ -58,5 +68,10 @@ footer {
 }
 .ejercicio__enlaces a {
   display: block;
+  padding: 20px;
+}
+.row.title {
+  background-color: rgba(0, 0, 0, 0.685);
+  color: #fff;
   padding: 20px;
 }
