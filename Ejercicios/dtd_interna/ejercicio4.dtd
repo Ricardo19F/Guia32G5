@@ -1,5 +1,11 @@
 <!-- paso 1 -->
-<!ELEMENT federacion (liga+)>
+<!ELEMENT federacion (a, liga+)>
+<!ELEMENT a (#PCDATA)>
+<!ATTLIST a
+    href CDATA #IMPLIED
+    xmlns CDATA #IMPLIED
+    target (_blank|_self|marco) "_self"
+>
 <!-- paso 2 -->
 <!ATTLIST federacion nombre_fed CDATA #FIXED "Federacion Española de Fútbol">
 <!-- paso 3 -->

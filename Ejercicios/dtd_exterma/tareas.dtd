@@ -1,5 +1,11 @@
 <!-- paso 1 y 2  -->
-<!ELEMENT root (carrera, materia)>
+<!ELEMENT root (a, carrera, materia)>
+<!ELEMENT a (#PCDATA)>
+<!ATTLIST a
+    href CDATA #IMPLIED
+    xmlns CDATA #IMPLIED
+    target (_blank|_self|marco) "_self"
+>
 <!ATTLIST root universidad CDATA #FIXED "Universidad de El Salvador">
 <!-- paso 3 -->
 <!ELEMENT carrera (nombre_carrera, codigo)>

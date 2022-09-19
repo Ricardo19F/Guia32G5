@@ -1,10 +1,11 @@
-root::before{content: attr(universidad);
-       background-color: red;
-       color: white;
-       margin:0.5em;
-       font-family: Verdana;
-       display:block;
-       text-align: center;
+root::before {
+  content: attr(universidad);
+  background-color: red;
+  color: white;
+  margin: 0.5em;
+  font-family: Verdana;
+  display: block;
+  text-align: center;
 }
 
 grupo {
@@ -15,13 +16,13 @@ grupo {
   background-color: whitesmoke;
 }
 carrera {
-      display:block;
-      font-weight:bolder;
-      text-align:center;
-      font-size:30px;
-      background-color: green;
-      color: white;
-      }
+  display: block;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 30px;
+  background-color: green;
+  color: white;
+}
 
 actividad,
 porcentaje,
@@ -50,24 +51,64 @@ grupo {
   color: brown;
 }
 coordinador {
-       color:blue
-       }
-integrante { 
-       color:orange
-       }
+  color: blue;
+}
+integrante {
+  color: orange;
+}
 
-       carrera::before{content: "Facultad: "attr(facultad)" - ";}
+carrera::before {
+  content: "Facultad: " attr(facultad) " - ";
+}
 
+materia::before {
+  content: "Codigo de la materia: " attr(codigo);
+  background-color: lightblue;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+}
+clase::before {
+  content: "Informacion sobre la clase - Profesor encargado: " attr(profesor_encargado) " - Grupo: " attr(grupo) " - Horario: " attr(horario) " - ¿Es electiva? " attr(es_electiva);
+  background-color: lightskyblue;
+  font-size: 12px;
+  display: block;
+  text-align: center;
+}
+actividad::before {
+  content: "Tipo de evaluacion: " attr(evaluacion);
+  background-color: whitesmoke;
+  font-size: 15px;
+  display: block;
+  text-align: center;
+}
+porcentaje::before {
+  content: "Ponderacion: ";
+}
+grupo::before {
+  content: "Numero de grupo: " attr(numero) " - Tema: " attr(tema);
+  font-size: 20px;
+}
+coordinador::after {
+  content: ". - Sexo: " attr(sexo);
+}
+integrante::after {
+  content: ".";
+}
+carnet::after {
+  content: " - ";
+}
+nombre::after {
+  content: " - ";
+}
+apellido::after {
+  content: " - ";
+}
 
-materia::before{content: "Codigo de la materia: "attr(codigo);background-color: lightblue; font-size: 20px;display:block;text-align: center;}
-clase::before{content: "Informacion sobre la clase - Profesor encargado: "attr(profesor_encargado)" - Grupo: "attr(grupo)" - Horario: "attr(horario)" - ¿Es electiva? "attr(es_electiva);background-color:lightskyblue; font-size: 12px;display:block;text-align: center;}
-actividad::before{content:"Tipo de evaluacion: "attr(evaluacion);background-color:whitesmoke; font-size: 15px;display:block;text-align: center;}
-porcentaje::before{content:"Ponderacion: ";}
-grupo::before{content: "Numero de grupo: "attr(numero)" - Tema: "attr(tema);font-size: 20px;}
-coordinador::after{content: ". - Sexo: "attr(sexo);}
-integrante::after{content: ".";}
-carnet::after{content: " - ";}
-nombre::after{content: " - ";}
-apellido::after{content: " - ";}
-
-matricula::before{content:" Matricula: ";}
+matricula::before {
+  content: " Matricula: ";
+}
+a {
+  background-color: aliceblue;
+  padding: 20px;
+}

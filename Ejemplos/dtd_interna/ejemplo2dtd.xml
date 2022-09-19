@@ -3,6 +3,7 @@
 
 <!DOCTYPE fichero SYSTEM "fichero.dtd">
 <fichero>
+       <a xmlns="http://www.w3.org/1999/xhtml" href="./../../index.html">Regresar</a>
        <ficha>
               <nombre sexo="masculino">
          Angel

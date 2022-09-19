@@ -2,6 +2,7 @@
 <?xml-stylesheet type="text/css" href="tareas.css"?>
 <!DOCTYPE root SYSTEM "tareas.dtd">
 <root universidad="Universidad de El Salvador">
+    <a xmlns="http://www.w3.org/1999/xhtml" href="./../../index.html">Regresar</a>
     <carrera facultad="FIA">
         <nombre_carrera>Sistemas</nombre_carrera>
         <codigo>ISI-1998</codigo>

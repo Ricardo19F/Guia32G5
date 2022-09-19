@@ -2,7 +2,13 @@
 <!-- ejemplodtd1.xml -->
 <?xml-stylesheet href="estilo.css" type="text/css"?>
 <!DOCTYPE fichero [
-	<!ELEMENT fichero (ficha+)>
+	<!ELEMENT fichero (a, ficha+)>
+	<!ELEMENT a (#PCDATA)>
+	<!ATTLIST a
+		href CDATA #IMPLIED
+		xmlns CDATA #IMPLIED
+		target (_blank|_self|marco) "_self"
+	>
 	<!ELEMENT ficha (nombre, apellido, direccion*, DUI?)>
 	<!ELEMENT nombre (#PCDATA)>
 	<!ATTLIST nombre sexo (masculino|femenino) #REQUIRED>
@@ -12,6 +18,7 @@
 	<!ELEMENT DUI (#PCDATA)>
 ]>
 <fichero>
+	<a xmlns="http://www.w3.org/1999/xhtml" href="./../../index.html">Regresar</a>
 	<ficha>
 		<nombre sexo="femenino" edad="17">Angelina</nombre>
 		<apellido>Fernandez</apellido>

@@ -2,11 +2,12 @@
 
 <!DOCTYPE fichero SYSTEM "fichero.dtd">
 <fichero>
- <ficha>
-  <nombre sexo="masculino">
+       <a xmlns="http://www.w3.org/1999/xhtml" href="./../../index.html">Regresar</a>
+       <ficha>
+              <nombre sexo="masculino">
          Angel
   </nombre>
-  <apellido>Barbero</apellido>
-  <direccion>c/Ulises, 36</direccion>
-</ficha>
+              <apellido>Barbero</apellido>
+              <direccion>c/Ulises, 36</direccion>
+       </ficha>
 </fichero>
