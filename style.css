@@ -1,0 +1,58 @@
+* {
+  font-family: "Kanit", sans-serif;
+}
+header {
+  background-color: #55370b;
+  color: #fff;
+  display: block;
+  font-variant: small-caps;
+  text-align: center;
+}
+.header__banner h1 {
+  position: relative;
+  margin: 0;
+  padding: 15px 0px;
+}
+main {
+  padding: 100px;
+}
+footer {
+  background-color: #55370b;
+  color: white;
+  padding: 50px;
+}
+.footer__contenedor {
+  flex-wrap: wrap;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-evenly;
+}
+.footer__contenedor--izq {
+  padding: 10px 0;
+}
+.footer__contenedor--der {
+  padding: 10px 0;
+  text-align: end;
+}
+.footer__info {
+  text-align: center;
+}
+.row {
+  display: flex;
+}
+.space {
+  flex-grow: 0.4;
+}
+.ejercicio {
+  flex-grow: 1;
+}
+.ejercicio__title {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.ejercicio__enlaces {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
