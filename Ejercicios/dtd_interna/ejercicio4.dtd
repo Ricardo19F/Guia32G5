@@ -1,0 +1,57 @@
+<!-- paso 1 -->
+<!ELEMENT federacion (liga+)>
+<!-- paso 2 -->
+<!ATTLIST federacion nombre_fed CDATA #FIXED "Federacion Española de Fútbol">
+<!-- paso 3 -->
+<!-- <!ELEMENT liga (categoria, equipo)> -->
+<!ELEMENT liga (equipo+)>
+<!ATTLIST liga
+    codigo CDATA #REQUIRED
+    num_equipo CDATA #REQUIRED
+    nombre_liga CDATA #REQUIRED
+>
+<!-- paso4 -->
+<!ELEMENT equipo (mayor, femenil, reserva, trofeo*, figura_celebre*)>
+<!ATTLIST equipo
+    nombre_equipo CDATA #REQUIRED
+    siglas ID #REQUIRED
+    anio_fundacion CDATA #REQUIRED
+    tamanio_plantilla CDATA #REQUIRED
+>
+<!-- paso 5 -->
+<!ELEMENT mayor (cuerpo_tecnico, jugador+)>
+<!ELEMENT femenil (cuerpo_tecnico,jugador+)>
+<!ELEMENT reserva (cuerpo_tecnico,jugador+)>
+<!-- paso6 -->
+<!ELEMENT jugador (nombre, apellido, salario)>
+<!ATTLIST jugador dorsal CDATA #REQUIRED>
+<!ATTLIST jugador posicion (delantero|defensa|medio|portero) #REQUIRED>
+<!ATTLIST jugador año-contratado CDATA #REQUIRED>
+<!ATTLIST jugador no-identificacion ID #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT salario (#PCDATA)>
+<!-- paso7 -->
+<!ELEMENT cuerpo_tecnico (director_tecnico, preparador_fisico, doctor, asistentes+)>
+<!ELEMENT director_tecnico (#PCDATA)>
+<!ELEMENT preparador_fisico (#PCDATA)>
+<!ELEMENT doctor (#PCDATA)>
+<!ELEMENT asistentes (#PCDATA)>
+<!ATTLIST preparador_fisico id CDATA #REQUIRED>
+<!ATTLIST doctor id CDATA #REQUIRED>
+<!ATTLIST asistentes id CDATA #REQUIRED>
+<!-- paso 8 -->
+<!-- paso 9 -->
+<!ELEMENT trofeo (#PCDATA)>
+<!ATTLIST trofeo anio CDATA #REQUIRED>
+<!ATTLIST trofeo rival CDATA #REQUIRED>
+<!ATTLIST trofeo marcador CDATA #REQUIRED>
+<!-- paso 10 -->
+<!ELEMENT figura_celebre (#PCDATA)>
+<!ATTLIST figura_celebre
+    periodo CDATA #REQUIRED
+    posiscion (delantero|defensa|medio|portero) #REQUIRED
+    goles CDATA #IMPLIED
+    asistencias CDATA #IMPLIED
+    atajadas CDATA #IMPLIED
+>
