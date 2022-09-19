@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- ejercicio-ii-1b-dtd.xml  GRUPO05-->
+<?xml-stylesheet type="text/css" href="ejercicio-ii-1b-dtd.css" ?>
+<!DOCTYPE fichero [
+		<!ELEMENT fichero (ficha+, a)>
+		<!ELEMENT ficha (nombre, apellido, direccion*)>
+    <!ELEMENT a (#PCDATA)>
+		<!ATTLIST a  
+  		href CDATA #IMPLIED
+  		xmlns CDATA #IMPLIED 
+  		target (_blank|_self|marco) "_blank">
+		<!ELEMENT nombre (#PCDATA)>
+		<!ATTLIST nombre sexo (masculino|femenino) #REQUIRED>
+    <!ATTLIST nombre edad  CDATA  #REQUIRED>
+    <!ATTLIST nombre DUI CDATA  #IMPLIED>
+		<!ELEMENT apellido (#PCDATA)>
+		<!ELEMENT direccion (#PCDATA)>
+		<!ELEMENT DUI (#PCDATA)>
+		]>
+		<fichero>
+		<ficha>
+		<nombre sexo="masculino" edad="23" DUI="09080978-8">Cristian  Rodolfo</nombre>
+		<apellido>Alvarez Dominguez</apellido>
+		<direccion>Brooklyn, NY.</direccion>
+		</ficha>
+    <a xmlns="http://www.w3.org/1999/xhtml" href="../index.html" target="marco">Regresar</a>
+		</fichero>
