@@ -1,0 +1,8 @@
+* {display:block;background-color:lightgreen;}
+nombre::before{content: "Nombre(s): ";color:blue;}
+nombre[sexo]::after{content: " Sexo: "attr(sexo);color:yellow;}
+nombre[edad]::after{content: " Edad: "attr(edad);color:purple;}
+apellido::before{content: " Apellido(s): ";color:green;}
+direccion::before{content: "Direccion: ";color:gray;}
+
+
