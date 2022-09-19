@@ -8,12 +8,12 @@ root::before{content: attr(universidad);
 }
 
 grupo {
-              display:block; 
-              border: 1px solid silver;
-              margin:0.5em; 
-              padding:0.5em; 
-              background-color:whitesmoke;
-              }
+  display: block;
+  border: 1px solid silver;
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: whitesmoke;
+}
 carrera {
       display:block;
       font-weight:bolder;
@@ -23,28 +23,32 @@ carrera {
       color: white;
       }
 
-actividad, porcentaje, grupo, coordinador, integrante {
-                                display:block;
-                                text-align:center;
-        }
+actividad,
+porcentaje,
+grupo,
+coordinador,
+integrante {
+  display: block;
+  text-align: center;
+}
 
 actividad {
-	 text-decoration: underline  ;
-     	 font-weight:bolder;
-     	 font-size:20px;
-	     color:gree;
-     	 display:block; 
-         border:1px solid silver;
-         margin:0.5em; 
-         padding:0.5em; 
-         background-color:whitesmoke;
-     }
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 20px;
+  color: gree;
+  display: block;
+  border: 1px solid silver;
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: whitesmoke;
+}
 porcentaje {
-       color:green
-       }
+  color: green;
+}
 grupo {
-       color:brown
-       }
+  color: brown;
+}
 coordinador {
        color:blue
        }

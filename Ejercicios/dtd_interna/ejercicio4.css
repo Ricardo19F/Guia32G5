@@ -33,6 +33,58 @@ equipo {
     padding-bottom: 10px;
 }
 
+mayor, femenil, reserva {
+    display: inline-block;
+    border: 3px double rgb(11, 3, 67);
+    border-radius: 1rem;
+    text-align: center;
+    margin: 10px auto;
+    color: white;
+    background-color: #35716d;
+    padding-bottom: 10px;
+
+}
+
+director_tecnico::before {
+    content: "Director tecnico: ";
+    padding-top: 10px;
+    display: block;
+    color: rgb(5, 13, 42);
+}
+
+preparador_fisico::before {
+    content: "preparador_fisico: ";
+    display: block;
+    padding-top: 10px;
+    color: rgb(5, 13, 42);
+
+}
+doctor::before {
+    content: "Doctor: ";
+    display: block;
+    padding-top: 10px;
+    color:  rgb(5, 13, 42);
+}
+
+jugador::before {
+    content: "jugador: ";
+    display: block;
+    padding-top: 10px;
+    color:  rgb(40, 25, 25);
+}
+
+
+jugador, salario {
+    display: flex;
+    content: attr(nombre_jugador);
+    color: rgb(107, 20, 65);
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    margin: auto;
+    text-align: center;
+}
+
 /* TROFEO */
 trofeo {
     font-family: monospace;

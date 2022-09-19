@@ -48,11 +48,15 @@ footer {
 }
 .ejercicio__title {
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .ejercicio__enlaces {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.ejercicio__enlaces a {
+  display: block;
+  padding: 20px;
 }
