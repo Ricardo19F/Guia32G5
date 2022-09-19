@@ -38,16 +38,16 @@ mayor, femenil, reserva {
     border: 3px double rgb(11, 3, 67);
     border-radius: 1rem;
     text-align: center;
-    margin: 10px auto;
+    margin: 1px auto;
     color: white;
     background-color: #35716d;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 
 }
 
 director_tecnico::before {
     content: "Director tecnico: ";
-    padding-top: 10px;
+    padding-top: 1px;
     display: block;
     color: rgb(5, 13, 42);
 }
@@ -55,21 +55,21 @@ director_tecnico::before {
 preparador_fisico::before {
     content: "preparador_fisico: ";
     display: block;
-    padding-top: 10px;
+    padding-top: 1px;
     color: rgb(5, 13, 42);
 
 }
 doctor::before {
     content: "Doctor: ";
     display: block;
-    padding-top: 10px;
+    padding-top: 1px;
     color:  rgb(5, 13, 42);
 }
 
 jugador::before {
     content: "jugador: ";
-    display: block;
-    padding-top: 10px;
+    display: flex;
+    padding-top: 1px;
     color:  rgb(40, 25, 25);
 }
 
